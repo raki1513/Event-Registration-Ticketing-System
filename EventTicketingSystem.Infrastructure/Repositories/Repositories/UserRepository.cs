@@ -30,9 +30,17 @@ namespace EventTicketingSystem.Infrastructure.Repositories.Repositories
 
         }
 
-        public Task<User> FindUserExist(string email)
+        public async Task<User> FindUserExist(string email)
         {
-            return _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
+        public async Task<Role>GetRoleByName(RoleType roletype)
+        {
+            return await _context.Roles.FirstOrDefaultAsync(r => r.RoleName == roletype);
+        }
+        public async Task SaveChangesAsync()
+        {
+             await _context.SaveChangesAsync();
         }
     }
 }

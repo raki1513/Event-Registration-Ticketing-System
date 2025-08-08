@@ -11,5 +11,6 @@ namespace EventTicketingSystem.Application.IServices
     {
         Task<bool> UserLogin(LoginDTO loginDTO);
         Task<bool> RegisterUser(UserDto userDTO);
+        Task<bool> AssignRole(AssignRoleDto assignDto);
     }
 }

@@ -47,6 +47,20 @@ namespace EventTicketingSystem.API.Controllers
                 return Ok("Login Successfull, Here's the Token: " +token);
             }
         }
+        [HttpPost("assign-role")]
+        public async Task<IActionResult> AssignRole([FromBody] AssignRoleDto assignDto)
+        {
+            if (assignDto == null)
+            {
+                return BadRequest("Role details cannot be empty");
+            }
+            bool isRole = await _userServices.AssignRole(assignDto);
+            if (!isRole)
+            {
+                return BadRequest("Falied to assign role, User may not be found, Role may not be found or User already has been assigned to the role");
+             }
+            return Ok("Role Assigned Successfully!");
+        }
 
         public IActionResult Index()
         {

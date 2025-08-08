@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using EventTicketingSystem.Application.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventTicketingSystem.API.Controllers
@@ -17,7 +18,7 @@ namespace EventTicketingSystem.API.Controllers
     [Authorize(Roles = "Admin")]
     [ApiController]
     [Route("api/[controller]")]
-    public class AdminController : ControllerBase
+    public class AssignController : ControllerBase
     {
         [HttpGet("authorization")]
         public IActionResult Index()

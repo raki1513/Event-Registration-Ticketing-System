@@ -30,8 +30,29 @@ namespace EventTicketingSystem.Application.Services
 
             };
             await _userRepository.AddUserAsync(newUser);
+            await _userRepository.SaveChangesAsync();
             return true;
             throw new NotImplementedException();
+        }
+        public async Task<bool> AssignRole(AssignRoleDto assignDto)
+        {
+            var user = await _userRepository.FindUserExist(assignDto.Email);
+            if (user == null)
+            {
+                return false;
+            }
+            var role = await _userRepository.GetRoleByName(assignDto.RoleName);
+            if (role == null)
+            {
+                return false;
+            }
+            if (user.UserRoles.Any(ur=>ur.RoleId==role.Id))
+            {
+                return false;
+            }
+            user.UserRoles.Add(new UserRole { RoleId = role.Id });
+            await _userRepository.SaveChangesAsync();
+            return true;
         }
 
         public async Task<bool> UserLogin(LoginDTO loginDTO)

@@ -1,4 +1,5 @@
 ﻿using EventTicketingSystem.Domain.Entites;
+using EventTicketingSystem.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,7 @@ namespace EventTicketingSystem.Infrastructure.Repositories.IRepositories
     {
         Task AddUserAsync(User user);
         Task<User> FindUserExist(string email);
+        Task<Role> GetRoleByName(RoleType roleType);
+        Task SaveChangesAsync();
     }
 }

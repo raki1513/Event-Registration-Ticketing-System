@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj": {}
+    "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj": {
+    "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj",
         "projectName": "EventTicketingSystem.Domain",
-        "projectPath": "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj",
-        "packagesPath": "C:\\Users\\ratna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Domain\\obj\\",
+        "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ratna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,24 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj": {
+    "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj",
         "projectName": "EventTicketingSystem.Infrastructure",
-        "projectPath": "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ratna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ratna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj": {
-                "projectPath": "C:\\Users\\ratna\\Downloads\\EventTicketingSystem (2)\\EventTicketingSystem\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj"
+              "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Domain\\EventTicketingSystem.Domain.csproj"
               }
             }
           }
@@ -156,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

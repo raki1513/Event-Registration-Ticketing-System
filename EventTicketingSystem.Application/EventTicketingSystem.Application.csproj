@@ -11,11 +11,6 @@
     <ProjectReference Include="..\EventTicketingSystem.Infrastructure\EventTicketingSystem.Infrastructure.csproj" />
   </ItemGroup>
 
-
-	<ItemGroup>
-	  <Folder Include="DTOs\" />
-  </ItemGroup>
-
 	<ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
