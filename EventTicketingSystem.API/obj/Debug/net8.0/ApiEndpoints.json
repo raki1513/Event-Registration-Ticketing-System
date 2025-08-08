@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AdminController",
+    "Method": "Index",
+    "RelativePath": "api/Admin/authorization",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AttendeeController",
+    "Method": "Index",
+    "RelativePath": "api/Attendee/authorization",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AuthenticationController",
+    "Method": "LoginUser",
+    "RelativePath": "Login the User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "EventTicketingSystem.Application.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AuthenticationController",
+    "Method": "RegisterUser",
+    "RelativePath": "Registering the User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "EventTicketingSystem.Application.DTOs.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

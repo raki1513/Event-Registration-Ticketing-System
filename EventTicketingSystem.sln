@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTicketingSystem.API", "EventTicketingSystem.API\EventTicketingSystem.API.csproj", "{82F82237-6493-4B73-B276-670FC69C9776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTicketingSystem.Domain", "EventTicketingSystem.Domain\EventTicketingSystem.Domain.csproj", "{627EDE0E-9293-4036-9475-E5C0806339C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTicketingSystem.Application", "EventTicketingSystem.Application\EventTicketingSystem.Application.csproj", "{BF389C7D-1918-4AB6-9315-DC0FD52CE378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTicketingSystem.Infrastructure", "EventTicketingSystem.Infrastructure\EventTicketingSystem.Infrastructure.csproj", "{A9EEC455-D606-4E34-BB60-23E90526D428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTicketingSystem.Tests", "EventTicketingSystem.Tests\EventTicketingSystem.Tests.csproj", "{6E1548C3-FADE-457B-8ECC-05CA8841655C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82F82237-6493-4B73-B276-670FC69C9776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F82237-6493-4B73-B276-670FC69C9776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F82237-6493-4B73-B276-670FC69C9776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F82237-6493-4B73-B276-670FC69C9776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627EDE0E-9293-4036-9475-E5C0806339C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627EDE0E-9293-4036-9475-E5C0806339C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627EDE0E-9293-4036-9475-E5C0806339C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627EDE0E-9293-4036-9475-E5C0806339C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF389C7D-1918-4AB6-9315-DC0FD52CE378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF389C7D-1918-4AB6-9315-DC0FD52CE378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF389C7D-1918-4AB6-9315-DC0FD52CE378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF389C7D-1918-4AB6-9315-DC0FD52CE378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9EEC455-D606-4E34-BB60-23E90526D428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9EEC455-D606-4E34-BB60-23E90526D428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9EEC455-D606-4E34-BB60-23E90526D428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9EEC455-D606-4E34-BB60-23E90526D428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1548C3-FADE-457B-8ECC-05CA8841655C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1548C3-FADE-457B-8ECC-05CA8841655C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1548C3-FADE-457B-8ECC-05CA8841655C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1548C3-FADE-457B-8ECC-05CA8841655C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {008465E3-9DC7-4657-8AEF-09BD87F64870}
+	EndGlobalSection
+EndGlobal
