@@ -9,8 +9,6 @@ namespace EventTicketingSystem.Application.IServices
 {
     public interface IUserServices
     {
-        Task<bool> UserLoginAsync(LoginDTO loginDTO);
         Task<bool> RegisterUserAsync(UserDto userDTO);
-        //Task<bool> AssignRole(AssignRoleDto assignDto);
     }
 }

@@ -32,3 +32,15 @@ D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\
 D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\refint\EventTicketingSystem.Domain.dll
 D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.pdb
 D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\ref\EventTicketingSystem.Domain.dll
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\bin\Debug\net8.0\EventTicketingSystem.Domain.deps.json
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\bin\Debug\net8.0\EventTicketingSystem.Domain.dll
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\bin\Debug\net8.0\EventTicketingSystem.Domain.pdb
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.AssemblyInfo.cs
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.sourcelink.json
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.dll
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\refint\EventTicketingSystem.Domain.dll
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.pdb
+C:\Users\ratna\Downloads\Event-Registration-Ticketing-System\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\ref\EventTicketingSystem.Domain.dll

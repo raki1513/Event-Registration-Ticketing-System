@@ -25,7 +25,7 @@ namespace EventTicketingSystem.Application.Services
             var newUser = new User
             {
                 Email = userDTO.Email,
-                Username = userDTO.UserName,
+                Username = userDTO.Username,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(userDTO.Password),
 
             };
@@ -55,11 +55,6 @@ namespace EventTicketingSystem.Application.Services
         //    return true;
         //}
 
-        public async Task<bool> UserLoginAsync(LoginDTO loginDTO)
-        {
-
-            throw new NotImplementedException();
-        }
     }
 
 }

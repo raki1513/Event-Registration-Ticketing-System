@@ -90,6 +90,11 @@ namespace EventTicketingSystem.API
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]))
         };
     });
+            builder.Services.AddControllers()
+.AddJsonOptions(options =>
+{
+options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
 
             var app = builder.Build();
 
@@ -99,6 +104,8 @@ namespace EventTicketingSystem.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();

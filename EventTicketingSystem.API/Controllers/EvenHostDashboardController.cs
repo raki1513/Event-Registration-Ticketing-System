@@ -53,7 +53,7 @@ namespace EventTicketingSystem.API.Controllers
                 return BadRequest(new { message = "Host Has No Events" });
 
             }
-            return Ok(new { result = events };
+            return Ok(new { result = events });
         }
 
         [HttpPut("GetEventBy{title}")]

@@ -346,16 +346,16 @@
     "schemas": {
       "AssignRoleDto": {
         "required": [
-          "email",
-          "roleName"
+          "Email",
+          "RoleName"
         ],
         "type": "object",
         "properties": {
-          "email": {
+          "Email": {
             "minLength": 1,
             "type": "string"
           },
-          "roleName": {
+          "RoleName": {
             "maxLength": 30,
             "minLength": 2,
             "type": "string"
@@ -365,17 +365,17 @@
       },
       "BookTicketDto": {
         "required": [
-          "attendeeEmail",
-          "eventTitle"
+          "AttendeeEmail",
+          "EventTitle"
         ],
         "type": "object",
         "properties": {
-          "attendeeEmail": {
+          "AttendeeEmail": {
             "minLength": 1,
             "type": "string",
             "format": "email"
           },
-          "eventTitle": {
+          "EventTitle": {
             "maxLength": 100,
             "minLength": 3,
             "type": "string"
@@ -385,31 +385,31 @@
       },
       "CreateEventDto": {
         "required": [
-          "capacity",
-          "hostEmail",
-          "location",
-          "title"
+          "Capacity",
+          "HostEmail",
+          "Location",
+          "Title"
         ],
         "type": "object",
         "properties": {
-          "title": {
+          "Title": {
             "maxLength": 100,
             "minLength": 3,
             "type": "string"
           },
-          "location": {
+          "Location": {
             "maxLength": 100,
             "minLength": 1,
             "pattern": "^[a-zA-Z\\s]+$",
             "type": "string"
           },
-          "capacity": {
+          "Capacity": {
             "maximum": 10000,
             "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
-          "hostEmail": {
+          "HostEmail": {
             "minLength": 1,
             "type": "string",
             "format": "email"
@@ -419,16 +419,16 @@
       },
       "LoginDTO": {
         "required": [
-          "password",
-          "username"
+          "Password",
+          "Username"
         ],
         "type": "object",
         "properties": {
-          "username": {
+          "Username": {
             "minLength": 1,
             "type": "string"
           },
-          "password": {
+          "Password": {
             "minLength": 1,
             "type": "string"
           }
@@ -437,23 +437,23 @@
       },
       "UserDto": {
         "required": [
-          "email",
-          "password",
-          "userName"
+          "Email",
+          "Password",
+          "Username"
         ],
         "type": "object",
         "properties": {
-          "userName": {
+          "Username": {
             "maxLength": 50,
             "minLength": 2,
             "type": "string"
           },
-          "email": {
+          "Email": {
             "minLength": 1,
             "type": "string",
             "format": "email"
           },
-          "password": {
+          "Password": {
             "minLength": 6,
             "type": "string"
           }
