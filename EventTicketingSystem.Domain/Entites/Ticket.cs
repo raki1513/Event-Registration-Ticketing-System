@@ -20,7 +20,8 @@ namespace EventTicketingSystem.Domain.Entites
         public int AttendeeId { get; set; }
         public User Attendee { get; set; }
 
-        public string TicketNumber { get; set; } =Guid.NewGuid().ToString();
+        public string TicketNumber { get; set; }
+        //= Guid.NewGuid().ToString
         public DateTime BookingTime { get; set; }=DateTime.UtcNow;
     }
 }

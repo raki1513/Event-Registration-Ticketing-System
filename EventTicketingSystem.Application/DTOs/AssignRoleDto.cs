@@ -14,6 +14,6 @@ namespace EventTicketingSystem.Application.DTOs
         public string Email { get; set; }
         [Required]
         [StringLength(30,MinimumLength =2)]
-        public RoleType RoleName { get; set; }
+        public string RoleName { get; set; }
     }
 }

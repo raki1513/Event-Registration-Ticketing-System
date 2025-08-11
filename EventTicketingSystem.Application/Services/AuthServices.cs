@@ -19,16 +19,17 @@ namespace EventTicketingSystem.Application.Services
             _jwtSettings = jwtOptions.Value;
         }
 
-        public async Task<string?> LoginUser(LoginDTO loginDTO)
+        public async Task<string?> GenerateJwtAsync(LoginDTO loginDTO)
         {
-            var user = await _authRepo.FindUserExist(loginDTO.userName);
+            var user = await _authRepo.FindUserExistAsync(loginDTO.userName);
             if (user == null || !BCrypt.Net.BCrypt.Verify(loginDTO.password, user.PasswordHash)) {
                 return null;
             }
             var roles = await _authRepo.GetUserRolesAsync(user.Id);
             var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.Name, user.Username)
+            new Claim(ClaimTypes.Name, user.Username),
+            new Claim(ClaimTypes.Sid,user.Id.ToString())
         };
             claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 

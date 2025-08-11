@@ -16,7 +16,7 @@ namespace EventTicketingSystem.Application.Services
         {
             _userRepository = userRepository;
         }
-        public async Task<bool> RegisterUser(UserDto userDTO)
+        public async Task<bool> RegisterUserAsync(UserDto userDTO)
         {
             var isAlreadyUser = await _userRepository.FindUserExist(userDTO.Email);
             if (isAlreadyUser != null) {
@@ -29,33 +29,33 @@ namespace EventTicketingSystem.Application.Services
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(userDTO.Password),
 
             };
-            await _userRepository.AddUserAsync(newUser);
+            await _userRepository.RegisterUserAsync(newUser);
             await _userRepository.SaveChangesAsync();
             return true;
-            throw new NotImplementedException();
+           
         }
-        public async Task<bool> AssignRole(AssignRoleDto assignDto)
-        {
-            var user = await _userRepository.FindUserExist(assignDto.Email);
-            if (user == null)
-            {
-                return false;
-            }
-            var role = await _userRepository.GetRoleByName(assignDto.RoleName);
-            if (role == null)
-            {
-                return false;
-            }
-            if (user.UserRoles.Any(ur=>ur.RoleId==role.Id))
-            {
-                return false;
-            }
-            user.UserRoles.Add(new UserRole { RoleId = role.Id });
-            await _userRepository.SaveChangesAsync();
-            return true;
-        }
+        //public async Task<bool> AssignRole(AssignRoleDto assignDto)
+        //{
+        //    var user = await _userRepository.FindUserExist(assignDto.Email);
+        //    if (user == null)
+        //    {
+        //        return false;
+        //    }
+        //    var role = await _userRepository.GetRoleByName(assignDto.RoleName.ToString());
+        //    if (role == null)
+        //    {
+        //        return false;
+        //    }
+        //    if (user.UserRoles.Any(ur=>ur.RoleId==role.Id))
+        //    {
+        //        return false;
+        //    }
+        //    user.UserRoles.Add(new UserRole { RoleId = role.Id });
+        //    await _userRepository.SaveChangesAsync();
+        //    return true;
+        //}
 
-        public async Task<bool> UserLogin(LoginDTO loginDTO)
+        public async Task<bool> UserLoginAsync(LoginDTO loginDTO)
         {
 
             throw new NotImplementedException();

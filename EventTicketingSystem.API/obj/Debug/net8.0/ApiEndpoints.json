@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "EventTicketingSystem.API.Controllers.AdminController",
-    "Method": "Index",
-    "RelativePath": "api/Admin/authorization",
+    "ContainingType": "EventTicketingSystem.API.Controllers.AdminDashboardController",
+    "Method": "GetAllEvents",
+    "RelativePath": "api/admin/allEvent",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,9 +10,126 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EventTicketingSystem.API.Controllers.AttendeeController",
-    "Method": "Index",
-    "RelativePath": "api/Attendee/authorization",
+    "ContainingType": "EventTicketingSystem.API.Controllers.AdminDashboardController",
+    "Method": "AssignRole",
+    "RelativePath": "api/admin/assign-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assignDto",
+        "Type": "EventTicketingSystem.Application.DTOs.AssignRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AdminDashboardController",
+    "Method": "CreateEventAsync",
+    "RelativePath": "api/admin/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EventTicketingSystem.Application.DTOs.CreateEventDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AdminDashboardController",
+    "Method": "DeleteEvent",
+    "RelativePath": "api/admin/DeletEvetby{title}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AdminDashboardController",
+    "Method": "UpdateEvent",
+    "RelativePath": "api/admin/GetEventby{title}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "EventTicketingSystem.Application.DTOs.CreateEventDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.AttendeDashboardController",
+    "Method": "BookTicket",
+    "RelativePath": "api/attendee/book-ticket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EventTicketingSystem.Application.DTOs.BookTicketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.EvenHostDashboardController",
+    "Method": "CreateEventAsync",
+    "RelativePath": "api/eventhost/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EventTicketingSystem.Application.DTOs.CreateEventDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.EvenHostDashboardController",
+    "Method": "DeleteEvent",
+    "RelativePath": "api/eventhost/DeletEventBy{title}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.EvenHostDashboardController",
+    "Method": "GetEventsOfHost",
+    "RelativePath": "api/eventhost/GetAllEvent",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -20,9 +137,30 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EventTicketingSystem.API.Controllers.AuthenticationController",
-    "Method": "LoginUser",
-    "RelativePath": "Login the User",
+    "ContainingType": "EventTicketingSystem.API.Controllers.EvenHostDashboardController",
+    "Method": "UpdateEvent",
+    "RelativePath": "api/eventhost/GetEventBy{title}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "EventTicketingSystem.Application.DTOs.CreateEventDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventTicketingSystem.API.Controllers.RegisterAndLoginController",
+    "Method": "LoginUserAsync",
+    "RelativePath": "api/RegisterAndLogin/UserLogin",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -36,9 +174,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EventTicketingSystem.API.Controllers.AuthenticationController",
+    "ContainingType": "EventTicketingSystem.API.Controllers.RegisterAndLoginController",
     "Method": "RegisterUser",
-    "RelativePath": "Registering the User",
+    "RelativePath": "api/RegisterAndLogin/UserRegister",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

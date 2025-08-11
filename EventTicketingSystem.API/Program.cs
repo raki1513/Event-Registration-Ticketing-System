@@ -25,12 +25,23 @@ namespace EventTicketingSystem.API
             builder.Services.AddControllers();
             //Getting Jwt Section to Shared Modules
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
-            //Adding Repositories 
+            //Adding Repositories and Repositories
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IAuthentication, AuthenticationRepository>();
-            // Adding the Services
+
             builder.Services.AddScoped<IUserServices, UserServices>();
             builder.Services.AddScoped<IAuthService, AuthServices>();
+
+            builder.Services.AddScoped<IAdminRepository, AdminRepository>();
+            builder.Services.AddScoped<IAdminServices, AdminServices>();
+
+            builder.Services.AddScoped<IHostEventRepository, HostEventRepository>();
+            builder.Services.AddScoped<IHostEventService, HostEventServices>();
+
+            builder.Services.AddScoped<ITicketBookingRepository, TicketBookingRepository>();
+            builder.Services.AddScoped<ITicketBookingService, TicketBookingService>();
+            builder.Services.AddScoped<IAdminEventService, AdminEventService>();
+            builder.Services.AddScoped<IAdminEventRepository, AdminEventRepository>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

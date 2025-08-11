@@ -4,7 +4,7 @@ namespace EventTicketingSystem.Application.DTOs
 {
     public class UserDto
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
@@ -17,5 +17,14 @@ namespace EventTicketingSystem.Application.DTOs
         [Required]
         [MinLength(6)]
         public string Password { get;set; }
+
+
+
+
+
+
+
+
+
     }
 }

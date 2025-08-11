@@ -1,4 +1,5 @@
-﻿using EventTicketingSystem.Domain.Entites;
+﻿using BCrypt.Net;
+using EventTicketingSystem.Domain.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -36,12 +37,14 @@ namespace EventTicketingSystem.Infrastructure.Data
             modelBuilder.Entity<UserRole>()
                 .HasIndex(ur => new { ur.UserId, ur.RoleId })
                 .IsUnique();
+                
 
             modelBuilder.Entity<Ticket>()
                 .HasIndex(t => new { t.AttendeeId, t.EventId })
                 .IsUnique();
 
-
+            modelBuilder.Entity<User>()
+                .HasIndex(e => e.Email).IsUnique();
 
             modelBuilder.Entity<Role>()
               .Property(r => r.RoleName)
@@ -68,7 +71,29 @@ namespace EventTicketingSystem.Infrastructure.Data
                 .HasOne(t => t.Attendee)
                 .WithMany(u => u.Tickets)
                 .HasForeignKey(t => t.AttendeeId)
-                .OnDelete(DeleteBehavior.Restrict);  
+                .OnDelete(DeleteBehavior.Restrict);
+
+            //var adminPasswordHash = BCrypt.Net.BCrypt.HashPassword("Admin@123");
+
+            //modelBuilder.Entity<User>().HasData(
+            //        new User
+            //        {
+            //           Id=1,
+            //            Username = "admin",
+            //            Email = "admin@gmail.com",
+            //            PasswordHash = "$2a$11$mWnYvbx6JLIILvzHVP/bUOO4FI2Zu/mUhqfIwwdNqZFwTWFP98WzO"
+            //        }
+            //    );
+
+            //modelBuilder.Entity<UserRole>().HasData(
+            //    new UserRole
+            //    {
+            //        Id=1,
+            //        UserId = 1, 
+            //        RoleId = 1  
+            //    }
+            //);
+
 
 
         }

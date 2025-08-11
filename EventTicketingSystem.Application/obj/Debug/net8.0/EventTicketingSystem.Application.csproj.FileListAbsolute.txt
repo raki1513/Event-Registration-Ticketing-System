@@ -30,3 +30,21 @@ C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTick
 C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTicketingSystem.Application\obj\Debug\net8.0\refint\EventTicketingSystem.Application.dll
 C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.pdb
 C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTicketingSystem.Application\obj\Debug\net8.0\ref\EventTicketingSystem.Application.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\bin\Debug\net8.0\EventTicketingSystem.Application.deps.json
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\bin\Debug\net8.0\EventTicketingSystem.Application.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\bin\Debug\net8.0\EventTicketingSystem.Application.pdb
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\bin\Debug\net8.0\EventTicketingSystem.Domain.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\bin\Debug\net8.0\EventTicketingSystem.Infrastructure.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\bin\Debug\net8.0\EventTicketingSystem.Domain.pdb
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\bin\Debug\net8.0\EventTicketingSystem.Infrastructure.pdb
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.csproj.AssemblyReference.cache
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.AssemblyInfoInputs.cache
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.AssemblyInfo.cs
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.csproj.CoreCompileInputs.cache
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.sourcelink.json
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTic.E430B1DC.Up2Date
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\refint\EventTicketingSystem.Application.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\EventTicketingSystem.Application.pdb
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Application\obj\Debug\net8.0\ref\EventTicketingSystem.Application.dll

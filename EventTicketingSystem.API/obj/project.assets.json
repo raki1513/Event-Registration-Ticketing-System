@@ -1707,6 +1707,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "EventTicketingSystem.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8"
@@ -4982,23 +4983,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {},
+    "C:\\Users\\ratna\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.API\\EventTicketingSystem.API.csproj",
+      "projectUniqueName": "C:\\Users\\ratna\\Downloads\\Event-Registration-Ticketing-System\\Event-Registration-Ticketing-System\\EventTicketingSystem.API\\EventTicketingSystem.API.csproj",
       "projectName": "EventTicketingSystem.API",
-      "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.API\\EventTicketingSystem.API.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.API\\obj\\",
+      "projectPath": "C:\\Users\\ratna\\Downloads\\Event-Registration-Ticketing-System\\Event-Registration-Ticketing-System\\EventTicketingSystem.API\\EventTicketingSystem.API.csproj",
+      "packagesPath": "C:\\Users\\ratna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ratna\\Downloads\\Event-Registration-Ticketing-System\\Event-Registration-Ticketing-System\\EventTicketingSystem.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ratna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5013,11 +5014,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Application\\EventTicketingSystem.Application.csproj": {
-              "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Application\\EventTicketingSystem.Application.csproj"
+            "C:\\Users\\ratna\\Downloads\\Event-Registration-Ticketing-System\\Event-Registration-Ticketing-System\\EventTicketingSystem.Application\\EventTicketingSystem.Application.csproj": {
+              "projectPath": "C:\\Users\\ratna\\Downloads\\Event-Registration-Ticketing-System\\Event-Registration-Ticketing-System\\EventTicketingSystem.Application\\EventTicketingSystem.Application.csproj"
             },
-            "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\hp\\OneDrive\\Desktop\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj"
+            "C:\\Users\\ratna\\Downloads\\Event-Registration-Ticketing-System\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ratna\\Downloads\\Event-Registration-Ticketing-System\\Event-Registration-Ticketing-System\\EventTicketingSystem.Infrastructure\\EventTicketingSystem.Infrastructure.csproj"
             }
           }
         }
@@ -5076,7 +5077,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

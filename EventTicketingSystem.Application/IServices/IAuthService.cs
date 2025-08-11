@@ -9,6 +9,6 @@ namespace EventTicketingSystem.Application.IServices
 {
     public interface IAuthService
     {
-        Task<string?> LoginUser(LoginDTO loginDTO);
+        Task<string?> GenerateJwtAsync(LoginDTO loginDTO);
     }
 }

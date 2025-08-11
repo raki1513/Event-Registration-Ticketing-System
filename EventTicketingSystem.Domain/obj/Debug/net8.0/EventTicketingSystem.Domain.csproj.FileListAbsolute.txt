@@ -20,3 +20,15 @@ C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTick
 C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTicketingSystem.Domain\obj\Debug\net8.0\refint\EventTicketingSystem.Domain.dll
 C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.pdb
 C:\Users\ratna\Downloads\EventTicketingSystem (2)\EventTicketingSystem\EventTicketingSystem.Domain\obj\Debug\net8.0\ref\EventTicketingSystem.Domain.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\bin\Debug\net8.0\EventTicketingSystem.Domain.deps.json
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\bin\Debug\net8.0\EventTicketingSystem.Domain.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\bin\Debug\net8.0\EventTicketingSystem.Domain.pdb
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.AssemblyInfoInputs.cache
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.AssemblyInfo.cs
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.csproj.CoreCompileInputs.cache
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.sourcelink.json
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\refint\EventTicketingSystem.Domain.dll
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\EventTicketingSystem.Domain.pdb
+D:\EventProject\Event-Registration-Ticketing-System\EventTicketingSystem.Domain\obj\Debug\net8.0\ref\EventTicketingSystem.Domain.dll

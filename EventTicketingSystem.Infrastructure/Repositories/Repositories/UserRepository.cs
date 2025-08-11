@@ -14,16 +14,18 @@ namespace EventTicketingSystem.Infrastructure.Repositories.Repositories
     {
         private readonly TicketDbContext _context;
         public UserRepository(TicketDbContext context) => _context = context;
-        public async Task AddUserAsync(User user)
+        public async Task RegisterUserAsync(User user)
         {
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-            const int attendeeRoleId = 2;
+           
+
+            var attendeRole=await _context.Roles.FirstOrDefaultAsync(r=>r.RoleName==RoleType.Attendee);
 
             var userRole = new UserRole
             {
                 UserId = user.Id,
-                RoleId = attendeeRoleId
+                RoleId = attendeRole.Id
             };
             _context.UserRoles.Add(userRole);
             await _context.SaveChangesAsync();

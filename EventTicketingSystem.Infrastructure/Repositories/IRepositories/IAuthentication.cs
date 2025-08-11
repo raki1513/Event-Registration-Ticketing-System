@@ -9,7 +9,7 @@ namespace EventTicketingSystem.Infrastructure.Repositories.IRepositories
 {
     public interface IAuthentication
     {
-        Task<User> FindUserExist(string username);
+        Task<User> FindUserExistAsync(string username);
         Task<List<string>> GetUserRolesAsync(int userId);
     }
 }

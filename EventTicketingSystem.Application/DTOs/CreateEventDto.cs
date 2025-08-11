@@ -18,6 +18,8 @@ namespace EventTicketingSystem.Application.DTOs
         [Range(1, 10000)]
         public int Capacity { get; set; }
 
+
+
         [Required]
         [EmailAddress]
         public string HostEmail { get; set; }

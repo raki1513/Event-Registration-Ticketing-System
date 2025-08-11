@@ -10,7 +10,7 @@ namespace EventTicketingSystem.Infrastructure.Repositories.IRepositories
 {
     public interface IUserRepository
     {
-        Task AddUserAsync(User user);
+        Task RegisterUserAsync(User user);
         Task<User> FindUserExist(string email);
         Task<Role> GetRoleByName(RoleType roleType);
         Task SaveChangesAsync();

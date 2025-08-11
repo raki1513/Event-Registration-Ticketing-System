@@ -17,9 +17,10 @@ namespace EventTicketingSystem.Infrastructure.Repositories.Repositories
         {
             _ticketDbContext = ticketDbContext;
         }
-        public Task<User> FindUserExist(string username)
+        public async Task<User> FindUserExistAsync(string username)
         {
-            return _ticketDbContext.Users.FirstOrDefaultAsync(u => u.Username == username);
+            var user=await _ticketDbContext.Users.FirstOrDefaultAsync(u => u.Username == username);
+            return user;
         }
         public async Task<List<string>> GetUserRolesAsync(int userId)
         {
