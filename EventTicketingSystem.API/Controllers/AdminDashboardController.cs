@@ -28,9 +28,9 @@ namespace EventTicketingSystem.API.Controllers
             var result = await _adminServices.AssignRole(assignDto);
 
             if (!result)
-                return BadRequest("User not found, role not found, or already assigned.");
+                return BadRequest(new { message = "User not found, role not found, or already assigned." });
 
-            return Ok("Role assigned successfully.");
+            return Ok(new { message = "Role assigned successfully." });
         }
 
 
@@ -41,7 +41,7 @@ namespace EventTicketingSystem.API.Controllers
             var createdEvent = await _adminEventService.CreateEventAsyc(dto);
             if (createdEvent == null)
             {
-                return BadRequest("Host not found or something went wrong");
+                return BadRequest(new { message = "Host not found or something went wrong" });
             }
 
             return Ok(new
@@ -56,7 +56,7 @@ namespace EventTicketingSystem.API.Controllers
         public async Task<IActionResult> GetAllEvents()
         {
             var events = await _adminEventService.GetAllEventsAsync();
-            return Ok(events);
+            return Ok(new { result = events });
         }
 
 
@@ -66,8 +66,8 @@ namespace EventTicketingSystem.API.Controllers
         public async Task<IActionResult> UpdateEvent(string title, CreateEventDto dto)
         {
             var updated = await _adminEventService.UpdateEventAsync(title, dto);
-            if (updated == null) return NotFound("Event not found.");
-            return Ok(updated);
+            if (updated == null) return NotFound(new { message = "Event not found." });
+            return Ok(new { result = updated });
         }
 
         [HttpDelete("DeletEvetby{title}")]
@@ -75,8 +75,8 @@ namespace EventTicketingSystem.API.Controllers
         public async Task<IActionResult> DeleteEvent(string title)
         {
             var deleted = await _adminEventService.DeleteEventAsync(title);
-            if (!deleted) return NotFound("Event not found.");
-            return Ok("Event deleted successfully.");
+            if (!deleted) return NotFound(new { message = "Event not found." });
+            return Ok(new { message = "Event deleted successfully." });
         }
     }
 }

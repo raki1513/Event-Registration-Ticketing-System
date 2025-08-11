@@ -173,7 +173,7 @@
         }
       }
     },
-    "/api/eventhost/create": {
+    "/api/eventhost/Create an Event": {
       "post": {
         "tags": [
           "EvenHostDashboard"
@@ -204,7 +204,7 @@
         }
       }
     },
-    "/api/eventhost/GetAllEvent": {
+    "/api/eventhost/GetAllEvents": {
       "get": {
         "tags": [
           "EvenHostDashboard"
@@ -420,11 +420,11 @@
       "LoginDTO": {
         "required": [
           "password",
-          "userName"
+          "username"
         ],
         "type": "object",
         "properties": {
-          "userName": {
+          "username": {
             "minLength": 1,
             "type": "string"
           },

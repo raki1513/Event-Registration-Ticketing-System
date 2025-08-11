@@ -8,7 +8,7 @@ namespace EventTicketingSystem.Application.DTOs
 
         [Required]
         [StringLength(50, MinimumLength = 2)]
-        public string UserName { get;set; }
+        public string Username { get;set; }
 
         [Required]
         [EmailAddress]

@@ -23,8 +23,8 @@ namespace EventTicketingSystem.API.Controllers
         public async Task<IActionResult> BookTicket(BookTicketDto dto)
         {
             var result = await _ticketBookingService.BookTicketAsync(dto);
-            if (result == null) return BadRequest("Booking failed: User/Event not found or already booked.");
-            return Ok(result);
+            if (result == null) return BadRequest(new { message = "Booking failed: User/Event not found or already booked." });
+            return Ok(new { result = result });
         }
     }
 }

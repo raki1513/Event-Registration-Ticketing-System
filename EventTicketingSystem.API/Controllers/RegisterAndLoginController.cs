@@ -24,21 +24,21 @@ namespace EventTicketingSystem.API.Controllers
 
             if (userDto == null)
             {
-                return BadRequest("User Details cannot be empty");
+                return BadRequest(new { message = "User Details cannot be empty" });
             }
             if (!userDto.Email.EndsWith("@gmail.com"))
             {
-                return BadRequest("Only Gmail addresses are allowed .ex(user@gamil.com).");
+                return BadRequest(new { message = "Only Gmail addresses are allowed .ex(user@gamil.com)." });
             }
 
             bool isUser = await _userServices.RegisterUserAsync(userDto);
             if (!isUser)
             {
-                return BadRequest("User already Exist! Try Logging in ");
+                return BadRequest(new { message = "User Already Exist! Try Logging in" });
             }
             else
             {
-                return Ok("User Details Entered Successfully");
+                return Ok(new { message = "User Details Entered Successfully" });
             }
 
         }
@@ -46,15 +46,15 @@ namespace EventTicketingSystem.API.Controllers
         public async Task<IActionResult> LoginUserAsync([FromBody] LoginDTO loginDTO)
         {
             if (loginDTO == null) {
-                return BadRequest("User Credentials cannot be null");
+                return BadRequest(new { message = "User credentials cannot be null" });
             }
             string? token = await _authService.GenerateJwtAsync(loginDTO);
             if (string.IsNullOrEmpty(token)) {
-                return BadRequest("Enter Valid Credentials");
+                return BadRequest(new { message = "Enter Valid Credentials" });
             }
             else
             {
-                return Ok("Login Successfull: " + token);
+                return Ok(new { token = token });
             }
         }
     }

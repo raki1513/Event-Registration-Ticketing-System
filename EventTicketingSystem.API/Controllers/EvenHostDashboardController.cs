@@ -32,7 +32,7 @@ namespace EventTicketingSystem.API.Controllers
             var createdEvent = await _eventService.CreateEventAsyc(dto);
             if (createdEvent == null)
             {
-                return BadRequest("Host not found or something went wrong");
+                return BadRequest(new { message = "Host not found or something went wrong" });
             }
 
             return Ok(new
@@ -50,10 +50,10 @@ namespace EventTicketingSystem.API.Controllers
             var events = await _eventService.GetEventbyHostId(host);
             if (events == null)
             {
-                return BadRequest("Host Has No Events");
+                return BadRequest(new { message = "Host Has No Events" });
 
             }
-            return Ok(events);
+            return Ok(new { result = events };
         }
 
         [HttpPut("GetEventBy{title}")]
@@ -64,8 +64,8 @@ namespace EventTicketingSystem.API.Controllers
             int hostid = Convert.ToInt32(id);
             //var events = await _eventService.GetEventbyHostId(hostid);
             var updated = await _eventService.UpdateEventAsync(hostid,title, dto);
-            if (updated == null) return NotFound("Event not found.");
-            return Ok(updated);
+            if (updated == null) return NotFound(new { message = "Event not found." });
+            return Ok(new { result = updated });
         }
 
         [HttpDelete("DeletEventBy{title}")]
@@ -78,8 +78,8 @@ namespace EventTicketingSystem.API.Controllers
           
 
             var deleted = await _eventService.DeleteEventAsync(hostid,title);
-            if (!deleted) return NotFound("Event not found.");
-            return Ok("Event deleted successfully.");
+            if (!deleted) return NotFound(new { message = "Event not found." });
+            return Ok(new { message = "Event deleted successfully." });
         }
 
 

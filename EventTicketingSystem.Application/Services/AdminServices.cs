@@ -17,6 +17,11 @@ namespace EventTicketingSystem.Application.Services
     public class AdminServices:IAdminServices
     {
         private readonly IAdminRepository _adminRepository;
+
+        public AdminServices()
+        {
+        }
+
         public AdminServices(IAdminRepository adminRepository)
         {
             _adminRepository = adminRepository;

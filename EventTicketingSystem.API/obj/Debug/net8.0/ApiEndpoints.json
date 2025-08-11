@@ -97,7 +97,7 @@
   {
     "ContainingType": "EventTicketingSystem.API.Controllers.EvenHostDashboardController",
     "Method": "CreateEventAsync",
-    "RelativePath": "api/eventhost/create",
+    "RelativePath": "api/eventhost/Create an Event",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -129,7 +129,7 @@
   {
     "ContainingType": "EventTicketingSystem.API.Controllers.EvenHostDashboardController",
     "Method": "GetEventsOfHost",
-    "RelativePath": "api/eventhost/GetAllEvent",
+    "RelativePath": "api/eventhost/GetAllEvents",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -21,8 +21,8 @@ namespace EventTicketingSystem.Application.Services
 
         public async Task<string?> GenerateJwtAsync(LoginDTO loginDTO)
         {
-            var user = await _authRepo.FindUserExistAsync(loginDTO.userName);
-            if (user == null || !BCrypt.Net.BCrypt.Verify(loginDTO.password, user.PasswordHash)) {
+            var user = await _authRepo.FindUserExistAsync(loginDTO.Username);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(loginDTO.Password, user.PasswordHash)) {
                 return null;
             }
             var roles = await _authRepo.GetUserRolesAsync(user.Id);
